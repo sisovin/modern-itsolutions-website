@@ -57,3 +57,39 @@ model ContactSubmission {
   message   String
   createdAt DateTime @default(now())
 }
+
+model Project {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  startDate   DateTime
+  endDate     DateTime
+  status      String
+  teamMembers TeamMember[]
+}
+
+model TeamMember {
+  id    Int    @id @default(autoincrement())
+  name  String
+  role  String
+  photo String
+  bio   String
+}
+
+model Testimonial {
+  id        Int      @id @default(autoincrement())
+  author    String
+  content   String
+  rating    Int
+  createdAt DateTime @default(now())
+}
+
+model ContactForm {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  phone     String?
+  subject   String
+  message   String
+  createdAt DateTime @default(now())
+}

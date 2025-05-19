@@ -1,0 +1,11 @@
+{
+  "name": "modern-itsolutions-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"cd apps/backend && ./start.sh\" \"cd apps/frontend && npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
