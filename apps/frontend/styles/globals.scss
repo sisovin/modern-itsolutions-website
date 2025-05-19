@@ -1,0 +1,84 @@
+/* Global styles from template */
+@import "variables";
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--header-background-color);
+  color: var(--header-text-color);
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: var(--nav-background-color);
+}
+
+nav a {
+  color: var(--nav-link-color);
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: var(--nav-link-hover-color);
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: var(--footer-background-color);
+  color: var(--footer-text-color);
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--card-background-color);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.card h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.card p {
+  color: var(--card-text-color);
+}
